@@ -91,14 +91,14 @@ header img {
     width: 13px;
     height: 8px;
     margin-left: 10px;
-    background-image: url('lconos/Vector.png');
+    background-image: url(/lconos/vector-bajo.png);
 
 }
 
 main {
     width: 100%;
     height: auto;
-    background-color: var(--off-White);
+    background-color:#fff2e6;
 
 }
 
@@ -124,7 +124,7 @@ margin: 0 auto;
     background-image: url(img/Bitcoin.png);
     background-size: cover;
     background-position: center;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
 }
 
 .main-exchange-container h2 {
@@ -136,9 +136,184 @@ color: black;
 }
 
 .main-exchange-container p {
-    margin-bottom: 30px;font-size: 1.4rem;
+    margin-bottom: 30px;
+    font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.6rem;
     color: #757575;
+   
 }
 
+.main-currency-table{
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+}
+
+.main-currency-table .currency-table--title{
+    margin-bottom:15px ;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--bitcoin-orange);
+    
+}
+
+.currency-table--container{
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin:0 auto;
+}
+
+.currency-table--container table{
+    width: 100%;
+    height: 100%;
+}
+
+.currency-table--container td{
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--Grey);
+    background-color: var(--Just-White);
+}
+
+.currency-table--container .table__top-left{
+    border-radius: 15px 0 0 0;
+}
+
+.currency-table--container .table__top-right{
+border-radius: 0 15px 0 0;
+}
+
+
+.currency-table--container .table__bottom-right{
+    border-radius: 0 0 15px 0;
+}
+
+.currency-table--container .table__bottom-left{
+    border-radius: 0 0 0 15px;
+}
+ .currency-table--container .table__right{
+        font-size: 1.4rem;
+        font-weight: normal;
+        line-height: 1.7rem;
+        color: #757575;
+ }
+
+ .currency-table--container .down{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image:url(/lconos/desenso.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+
+ .currency-table--container .up{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image:url(lconos/aumento.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+
+
+.main-currency-table .currency-table--title2{
+    margin-bottom:15px ;
+    margin-top: 30px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color:  #1A9AF7;
+    
+}
+
+.currency-table--date{
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: var(--Soft-Orange);
+}
+
+.currency-table--date p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--warm-black);
+    font-weight: 300;
+}
+
+.currency-table--date2{
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: #E7F5FF;
+    border-radius: 5px;
+    }
+    .currency-table--date2 p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--warm-black);
+    font-weight: 300;
+}
+
+.main-product-detail{
+    position: relative;
+    width: 100px;
+    min-width: 320px;
+   height: auto;
+   padding: 20px 10px;
+    background-color: var(--warm-black);
+    
+}
+
+.product-detail--batata{
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    top: -10px;
+    left: calc(50% - 20px);
+    background-image: url(lconos/papa.png);
+}
+
+.product-detail--title{
+    width: 90px;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+.product-detail--title h2{
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: bold;
+    color: var(--Just-White);
+
+}
+.product-detail--title p{
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight:500;
+    line-height: 1.8rem;
+    color: #808080;
+    
+
+}
