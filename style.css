@@ -144,8 +144,20 @@ color: black;
    
 }
 
+.main-tables-container{
+    display: flex;
+    align-items: center;
+    height: 400px;
+    padding: 10px;
+    overflow-x:scroll ;
+    overscroll-behavior-x:contain ;
+    scroll-snap-type: x proximity;
+    gap: 7px;
+}
+
 .main-currency-table{
     width: 70%;
+    scroll-snap-align: center;
     min-width: 235px;
     max-width: 500px;
     height: 360px;
@@ -228,11 +240,22 @@ border-radius: 0 15px 0 0;
     background-position: center;
     background-repeat: no-repeat;
  }
+ .scroll{
 
+    display: inline-block;
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    background-image:url(lconos/vector-der.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+ }
 
 .main-currency-table .currency-table--title2{
     margin-bottom:15px ;
-    margin-top: 30px;
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 2.3rem;
@@ -275,7 +298,7 @@ border-radius: 0 15px 0 0;
 
 .main-product-detail{
     position: relative;
-    width: 100px;
+    width: 100%;
     min-width: 320px;
    height: auto;
    padding: 20px 10px;
@@ -406,6 +429,7 @@ color: var(--Just-White);
 }
 
 .main-plans-container{
+    
     width: 100%;
     min-width: 320px;
     padding-bottom:70px;
@@ -438,3 +462,122 @@ color: var(--Just-White);
     color: #757575;
     
 }
+
+.plans-container--slider{
+    display: flex;
+    align-items: center;
+    height: 316px;
+    overflow-x:scroll ;
+    overscroll-behavior-x:contain ;
+    scroll-snap-type: x proximity;
+    gap: 10px;
+
+}
+
+.plans-container--card{
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px auto 0;
+    padding: 0 15px;
+    background-color: var(--Just-White);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 70, 30, 0.16);
+
+}
+
+.plan{
+    position: absolute;
+    background-color: var(--bitcoin-orange);
+    width: 120px;
+    height: 30px;
+    border-radius: 8px;
+    color: var(--Just-White);
+    top: -15px;
+    left: calc(50% - 60px);
+    font-size: 1.4rem;
+    padding: 6px;
+}
+
+.vector-derecha{
+   
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    background-image:url(lconos/vector-der.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+ }
+
+ .vector-izquierda{
+   
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    background-image:url(lconos/vector-izq.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+
+
+.plan-card--title{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: black;
+}
+
+.plan-card--price{
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height:5.3rem;
+    color: black;
+
+}
+
+.plan-card--price span{
+    position: relative;
+    top: -30px;
+    left: -12px;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.plan-card--saving{
+    font-size: 1.6rem;
+    color: #757575;
+}
+
+.plan-card--ca{
+    width: 150px;
+    height: 48px;
+    margin-top:20px ;
+    background-color: #faf8f7;
+    border-radius: 4px;
+    border: 2px solid var(--bitcoin-orange);
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--warm-black);
+    font-family: "DM Sans", sans-serif;
+}
+
+.plan-card--ca span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(lconos/flecha-dere.png);
+    vertical-align: text-bottom;
+}
+    
+
