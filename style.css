@@ -390,7 +390,7 @@ color: var(--Just-White);
 .bitcoin-img-container{
     width: 100%;
     min-width: 300px;
-    height: 60vh;
+    height: 80vh;
     background-image: url(img/mujer2.png);
     background-position: center;
     background-size: cover;
@@ -405,3 +405,36 @@ color: var(--Just-White);
     color: var(--Just-White);
 }
 
+.main-plans-container{
+    width: 100%;
+    min-width: 320px;
+    padding-bottom:70px;
+    text-align: center;
+}
+
+.plans--title{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    
+}
+
+.plans--title h2{
+    padding-top:50px;
+    font-size: 2.3rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--warm-black);
+
+}
+
+.plans--title p{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+    
+}
