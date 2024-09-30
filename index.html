@@ -201,6 +201,27 @@
 
 
     <footer></footer>
+
+    <script>
+        window.onload = function() {
+  const cardsContainer = document.querySelector('.plans-container--slider');
+  const cards = document.querySelectorAll('.plans-container--card');
+
+  // Encuentra la tarjeta del medio
+  const middleIndex = Math.floor(cards.length / 2);
+  const middleCard = cards[middleIndex];
+
+  // Calcula el desplazamiento para centrar la tarjeta del medio
+  const scrollPosition = middleCard.offsetLeft - (cardsContainer.clientWidth / 2) + (middleCard.clientWidth / 2);
+
+  // Aplica el scroll
+  cardsContainer.scrollTo({
+    left: scrollPosition,
+    behavior: 'smooth' // Desplazamiento suave al cargar
+  });
+};
+    </script>
+
 </body>
 
 </html>
